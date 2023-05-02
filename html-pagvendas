@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vendas</title>
+</head>
+<body>
+  <h1>Vendas</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Produto 1</td>
+        <td>R$ 10,00</td>
+        <td>2</td>
+        <td>R$ 20,00</td>
+      </tr>
+      <tr>
+        <td>Produto 2</td>
+        <td>R$ 15,00</td>
+        <td>1</td>
+        <td>R$ 15,00</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Total: R$ 35,00</h2>
+  <h3>Formas de pagamento:</h3>
+  <ul>
+    <li>Cartão</li>
+    <li>Pix</li>
+    <li>GPay</li>
+  </ul>
+</body>
+</html>
