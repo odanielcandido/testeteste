@@ -1,2 +1,0 @@
-# testeteste
-aprender a programar
