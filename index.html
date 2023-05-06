@@ -1,112 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Vendas - Sua Empresa</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #f5f5f5;
-			color: #333;
-			margin: 0;
-			padding: 0;
-		}
-		header {
-			background-color: #000;
-			color: #fff;
-			padding: 10px;
-			text-align: center;
-			margin-bottom: 20px;
-		}
-		h1 {
-			font-size: 40px;
-			margin: 0;
-			padding: 10px;
-			text-align: center;
-			color: #000;
-		}
-		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 0 20px;
-			box-sizing: border-box;
-		}
-		table {
-			width: 100%;
-			border-collapse: collapse;
-			margin-bottom: 20px;
-		}
-		th, td {
-			padding: 10px;
-			border: 1px solid #ddd;
-			text-align: center;
-		}
-		th {
-			background-color: #000;
-			color: #fff;
-			font-weight: bold;
-		}
-		tbody tr:nth-child(even) {
-			background-color: #f2f2f2;
-		}
-		tfoot {
-			font-weight: bold;
-		}
-		ul {
-			list-style: none;
-			padding: 0;
-			margin-bottom: 20px;
-			display: flex;
-			justify-content: space-between;
-		}
-		li {
-			display: inline-block;
-			background-color: #f5f5f5;
-			padding: 10px;
-			border: 1px solid #ddd;
-			border-radius: 5px;
-			text-align: center;
-			width: calc(33.33% - 10px);
-			box-sizing: border-box;
-			cursor: pointer;
-		}
-		li:hover {
-			background-color: #ddd;
-		}
-	</style>
+  <title>Vendas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F7F7F7;
+      margin: 0;
+      padding: 0;
+    }
+css
+Copy code
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  font-weight: 700;
+  border-bottom: 2px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #F2F2F2;
+}
+
+.total {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #F08E3E;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #F04E23;
+}
+  </style>
 </head>
 <body>
-	<header>
-		<h1>Vendas - Sua Empresa</h1>
-	</header>
-	<div class="container">
-		<table>
-			<thead>
-				<tr>
-					<th>Produto</th>
-					<th>Preço</th>
-					<th>Quantidade</th>
-					<th>Total</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Produto 1</td>
-					<td>R$ 10,00</td>
-					<td>2</td>
-					<td>R$ 20,00</td>
-				</tr>
-				<tr>
-					<td>Produto 2</td>
-					<td>R$ 15,00</td>
-					<td>1</td>
-					<td>R$ 15,00</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="3" style="text-align: right;">Total:</td>
-					<td>R$ 35,00</td>
-				</tr>
-			</tfoot>
+  <div class="container">
+    <h1>Vendas</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Produto 1</td>
+          <td>R$ 10,00</td>
+          <td>2</td>
+          <td>R$ 20,00</td>
+        </tr>
+        <tr>
+          <td>Produto 2</td>
+          <td>R$ 15,00</td>
+          <td>1</td>
+          <td>R$ 15,00</td>
