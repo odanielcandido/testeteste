@@ -1,119 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vendas</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Login</title>
   <style>
     body {
+      background-color: black;
+      color: white;
       font-family: Arial, sans-serif;
-      background-color: #F7F7F7;
-      margin: 0;
-      padding: 0;
     }
-css
-Copy code
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  font-weight: 700;
-  border-bottom: 2px solid #ddd;
-}
-
-tbody tr:hover {
-  background-color: #F2F2F2;
-}
-
-.total {
-  margin-top: 20px;
-  font-size: 24px;
-  font-weight: 700;
-  color: #333;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #333;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #333;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #F08E3E;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 700;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #F04E23;
-}
+    
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    
+    form {
+      width: 400px;
+      margin: 0 auto;
+    }
+    
+    label {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    input[type="email"], input[type="password"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 20px;
+      background-color: #1C1C1C;
+      color: white;
+    }
+    
+    input[type="submit"] {
+      background-color: #F28705;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #FFA726;
+    }
+    
+    .geometric-shape {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background-color: #F28705;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+      transform: rotate(-45deg);
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      margin-top: -150px;
+      margin-left: -150px;
+    }
+    
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Vendas</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Produto</th>
-          <th>Preço</th>
-          <th>Quantidade</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Produto 1</td>
-          <td>R$ 10,00</td>
-          <td>2</td>
-          <td>R$ 20,00</td>
-        </tr>
-        <tr>
-          <td>Produto 2</td>
-          <td>R$ 15,00</td>
-          <td>1</td>
-          <td>R$ 15,00</td>
+  <div class="geometric-shape"></div>
+  <h1>Fazer login</h1>
+  <form>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Entrar">
+  </form>
+</body>
+</html>
