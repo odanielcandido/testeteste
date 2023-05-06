@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Venda - Nome do Produto</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      background-image: url('https://www.vangoghmuseum.nl/~/media/images/vgm/vgm_homepage/masthead-tiles/starry-night-tile-1410x600-2019.ashx?h=600&la=en&w=1410');
+      background-position: center;
+      background-size: cover;
+      filter: sepia(50%) hue-rotate(20deg) saturate(150%);
+    }
+    
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid white;
+    }
+    
+    .product img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 50px;
+    }
+    
+    .product-details {
+      flex: 1;
+    }
+    
+    .product-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .product-price {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    .product-description {
+      margin-bottom: 20px;
+    }
+    
+    .buy-button {
+      background-color: #F28705;
+      color: white;
+      padding: 20px 50px;
+      border-radius: 5px;
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .buy-button:hover {
+      background-color: #FFA726;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="product">
+      <img src="https://picsum.photos/300" alt="Nome do Produto">
+      <div class="product-details">
+        <h2 class="product-title">Nome do Produto</h2>
+        <h3 class="product-price">R$99,99</h3>
+        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac volutpat libero. Aliquam id lacus neque. Suspendisse convallis elit sed justo dapibus, eu fringilla sapien pretium. Donec in consequat nulla.</p>
+        <button class="buy-button">Comprar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
